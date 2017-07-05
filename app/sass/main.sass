@@ -42,27 +42,29 @@ ul li
 	width: 100%
 	min-height: 207px
 	border-bottom: 1px solid #d0e7e6
-	padding-top: 16px
+	padding-top: 13px
 	margin-bottom: 20px
 	.header__top
-		padding-bottom: 18px
+		padding-bottom: 4px
 		border-bottom: 1px solid #d0e7e6
-		.header__top-left
+		.location
 			float: left
 			width: 32%
-			margin-top: 5px
-			.top__content,
-			.top__link
+			.location__info,
+			.map__link
 				display: inline-block
+				vertical-align: middle
 				font-size: 12px
-			.special__color
 				font-family: 'Open Sans', sans-serif
 				font-weight: 700
 				color: #3cc9b0
+			.location__info
+				color: #35403e
+				font-weight: 400
 			.cart__item
 				color: #bcc0c0
 				margin-right: 12px
-			.map__icon
+			.map__link
 				position: relative
 				padding-left: 15px
 				&:before
@@ -75,17 +77,19 @@ ul li
 					height: 12px 
 					top: 0
 					left: 2px
-		.header__top-middle
+		.switcher
 			float: left
-			width: 29%
-			margin-top: 5px
-			margin-left: 20px
-			.middle__link
+			width: 32%
+			text-align: center
+			.switcher__price,
+			.switcher__lang
 				display: inline-block
+				vertical-align: middle
 				position: relative
-				font-family: 'Open Sans', sans-serif
+				font-family: 'Open Sans'
+				font-size: 12px
 				font-weight: 700
-				color: #000
+				color: #35403e
 				padding-right: 10px
 				&:after
 					position: absolute
@@ -98,18 +102,17 @@ ul li
 					border-top: 4px solid #858c8b
 					border-left: 4px solid transparent
 					border-right: 4px solid transparent
-		.header__top-right
+		.cart
 			float: right
 			width: 36%
-			.top__content,
-			.top__link
+			.cart__inside,
+			.payment
 				display: inline-block
-			.top__content
-				font-family: 'Open Sans', sans-serif
-				font-size: 12px
-			.cart__icon
+			.cart__inside
 				position: relative
 				padding-left: 25px
+				font-family: 'Open Sans', sans-serif
+				font-size: 13px
 				&:before
 					position: absolute
 					content: ""
@@ -120,128 +123,138 @@ ul li
 					height: 14px
 					top: 0
 					left: 0
-			.botton__link
+			.payment
+				font-size: 13px
+				font-weight: 700
+				color: #3cc9b0
+			.cart__item
+				color: #858c8b
+			.check__button
+				display: inline-block
+				vertical-align: middle
+				text-align: center
+				width: 140px
+				height: 28px
 				font-family: 'Open Sans', sans-serif
 				font-size: 13px
 				color: #fff
 				background-color: #ff642b
-				padding: 8px 42px
 				border-radius: 2px
 				margin-left: 4px
+				padding-top: 5px
 				transition: all .3s
 				&:hover
 					background-color: #f4936f
 	
 	.header__middle
-		padding: 10px 0
 		border-bottom: 1px solid #d0e7e6
-		.header__logo
+		max-height: 81px
+		.logo
 			float: left
-			position: relative
-			padding: 11px 25px 11px 49px
-			&:before
-				position: absolute
-				content: ""
-				display: table
-				background-image: url('../img/logo_top.png')
-				background-repeat: no-repeat
-				width: 38px
-				height: 37px
-				top: 15px
-				left: 0
-
-			.logo__link
-				font-family: 'Cabin', sans-serif
+			margin-top: 18px
+			.logo__link,
+			.logo__title
+				float: left
+			.logo__title
+				font-family: 'Cabin'
 				font-size: 28px
 				color: #ff642b
-				.logo__color
+				.title__item
 					color: #3cc9b0
 					font-weight: 700
 			.logo__info
 				font-family: 'PT Sans', sans-serif
 				font-size: 12px
 				color: #858c8b
-
-		.header__advertising
+		.advertising
 			float: right
 			background-color: #555555
-			padding: 10px 42px 10px 36px
-			.advertising__item
+			margin: 10px 0 10px 17px
+			width: 700px
+			height: 61px
+			.advertising__block
 				display: inline-block
 				border-right: 1px solid #888888
-				padding-right: 41px
-				.advertising__icon
-					position: relative
-					&:after
-						position: absolute
-						content: ""
-						display: table
-						background: url('../img/rocket-icon.png')
-						background-repeat: no-repeat
-						width: 32px
-						height: 30px
-						top: 0
-						right: -20px
-				.advertising__top
-					font-family: 'Open Sans', sans-serif
-					font-weight: 800
-					font-style: italic
-					font-size: 19px
-					text-transform: uppercase
-					color: #fff
-				.advertising__bottom
-					font-family: 'Open Sans', sans-serif
-					font-size: 11px
-					color: #ffc412
-				.advertising__element
-					text-transform: none
-				.advertising__viagra
-					font-weight: 700
-					text-transform: uppercase
-					padding: 5px 0
-				.middle__icon
-					position: relative
-					&:after
-						position: absolute
-						content: ""
-						display: table
-						background: url('../img/viagra__icon.png')
-						background-repeat: no-repeat
-						width: 40px
-						height: 39px
-						top: 0
-						right: -25px		
-			.middle__item
-				padding-left: 31px
-			.right__item
+				padding: 7px 38px 0 36px
+				line-height: 16px
+			.pills
+				padding: 0 58px 0 28px
+			.prices
 				border-right: none
-				padding-right: 0
-				padding-left: 32px	
-				.right__side,
-				.right__bottom
-					display: inline-block		
-				.right__side
-					text-transform: none
-					color: #ffc412
-					
-				.right__icon
-					padding-bottom: 1px
-					.right__element
-						font-size: 13px
-				.right__bottom
-					font-size: 11px
-					font-weight: 700
-					text-transform: uppercase
-					line-height: 1.67
+				padding: 0 0 0 32px 
+			.rocket__icon
+				position: relative
+				&:after
+					position: absolute
+					content: ""
+					display: table
+					background: url('../img/rocket-icon.png')
+					background-repeat: no-repeat
+					width: 32px
+					height: 30px
+					top: -4px
+					right: -17px
+			.promotion__title
+				font-family: 'Open Sans', sans-serif
+				font-weight: 800
+				font-style: italic
+				font-size: 19px
+				text-transform: uppercase
+				color: #fff
+			.promotion__information
+				font-family: 'Open Sans', sans-serif
+				font-size: 11px
+				color: #ffc412
+			.title__element
+				text-transform: none
+			.pills__type
+				font-family: 'Open Sans', sans-serif
+				font-size: 11px
+				color: #ffc412
+				font-weight: 700
+				text-transform: uppercase
+			.pills__icon
+				position: relative
+				&:after
+					position: absolute
+					content: ""
+					display: table
+					background: url('../img/viagra__icon.png')
+					background-repeat: no-repeat
+					width: 40px
+					height: 39px
+					top: 0
+					right: -25px		
+			.discount__percent,
+			.discount__information
+				display: inline-block
+				color: #ffc412
+				font-family: 'Open Sans'
+			.discount__percent
+				font-size: 28px
+				font-weight: 800
+				position: relative
+				padding-left: 15px
+				font-style: italic
+				.number
+					position: absolute
+					font-size: 13px
+					font-weight: 300
+					left: -4px
+					top: 0
+			.discount__information
+				font-weight: 700
+				text-transform: uppercase
+				font-size: 13px
 						
-	.header__benefits
-		padding: 17px 0
+	.benefits
+		padding: 9px 0
 		.benefits__list
-			.benefits_element
+			.list__element
 				position: relative
 				display: inline-block
 				padding-left: 30px
-				margin-left: 28px
+				margin-left: 20px
 				font-family: 'Open Sans', sans-serif
 				font-size: 15px
 				font-weight: 700
@@ -273,7 +286,7 @@ ul li
 				left: 0
 				width: 25px
 
-	.header__menu
+	.menu
 		background-color: #3cc9b0
 		.nav
 			.nav__list
@@ -287,7 +300,7 @@ ul li
 						font-size: 14px
 						font-weight: 700
 						color: #fff
-						padding: 14px 18px
+						padding: 16px 18px
 						transition: all .3s
 						&:hover
 							color: #ffc412

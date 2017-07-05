@@ -43,30 +43,32 @@ ul li {
   width: 100%;
   min-height: 207px;
   border-bottom: 1px solid #d0e7e6;
-  padding-top: 16px;
+  padding-top: 13px;
   margin-bottom: 20px; }
   .header .header__top {
-    padding-bottom: 18px;
+    padding-bottom: 4px;
     border-bottom: 1px solid #d0e7e6; }
-    .header .header__top .header__top-left {
+    .header .header__top .location {
       float: left;
-      width: 32%;
-      margin-top: 5px; }
-      .header .header__top .header__top-left .top__content,
-      .header .header__top .header__top-left .top__link {
+      width: 32%; }
+      .header .header__top .location .location__info,
+      .header .header__top .location .map__link {
         display: inline-block;
-        font-size: 12px; }
-      .header .header__top .header__top-left .special__color {
+        vertical-align: middle;
+        font-size: 12px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         color: #3cc9b0; }
-      .header .header__top .header__top-left .cart__item {
+      .header .header__top .location .location__info {
+        color: #35403e;
+        font-weight: 400; }
+      .header .header__top .location .cart__item {
         color: #bcc0c0;
         margin-right: 12px; }
-      .header .header__top .header__top-left .map__icon {
+      .header .header__top .location .map__link {
         position: relative;
         padding-left: 15px; }
-        .header .header__top .header__top-left .map__icon:before {
+        .header .header__top .location .map__link:before {
           position: absolute;
           content: "";
           display: table;
@@ -76,19 +78,22 @@ ul li {
           height: 12px;
           top: 0;
           left: 2px; }
-    .header .header__top .header__top-middle {
+    .header .header__top .switcher {
       float: left;
-      width: 29%;
-      margin-top: 5px;
-      margin-left: 20px; }
-      .header .header__top .header__top-middle .middle__link {
+      width: 32%;
+      text-align: center; }
+      .header .header__top .switcher .switcher__price,
+      .header .header__top .switcher .switcher__lang {
         display: inline-block;
+        vertical-align: middle;
         position: relative;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans';
+        font-size: 12px;
         font-weight: 700;
-        color: #000;
+        color: #35403e;
         padding-right: 10px; }
-        .header .header__top .header__top-middle .middle__link:after {
+        .header .header__top .switcher .switcher__price:after,
+        .header .header__top .switcher .switcher__lang:after {
           position: absolute;
           content: "";
           display: table;
@@ -99,19 +104,18 @@ ul li {
           border-top: 4px solid #858c8b;
           border-left: 4px solid transparent;
           border-right: 4px solid transparent; }
-    .header .header__top .header__top-right {
+    .header .header__top .cart {
       float: right;
       width: 36%; }
-      .header .header__top .header__top-right .top__content,
-      .header .header__top .header__top-right .top__link {
+      .header .header__top .cart .cart__inside,
+      .header .header__top .cart .payment {
         display: inline-block; }
-      .header .header__top .header__top-right .top__content {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 12px; }
-      .header .header__top .header__top-right .cart__icon {
+      .header .header__top .cart .cart__inside {
         position: relative;
-        padding-left: 25px; }
-        .header .header__top .header__top-right .cart__icon:before {
+        padding-left: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px; }
+        .header .header__top .cart .cart__inside:before {
           position: absolute;
           content: "";
           display: table;
@@ -121,132 +125,145 @@ ul li {
           height: 14px;
           top: 0;
           left: 0; }
-      .header .header__top .header__top-right .botton__link {
+      .header .header__top .cart .payment {
+        font-size: 13px;
+        font-weight: 700;
+        color: #3cc9b0; }
+      .header .header__top .cart .cart__item {
+        color: #858c8b; }
+      .header .header__top .cart .check__button {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        width: 140px;
+        height: 28px;
         font-family: 'Open Sans', sans-serif;
         font-size: 13px;
         color: #fff;
         background-color: #ff642b;
-        padding: 8px 42px;
         -webkit-border-radius: 2px;
                 border-radius: 2px;
         margin-left: 4px;
+        padding-top: 5px;
         -webkit-transition: all .3s;
         transition: all .3s; }
-        .header .header__top .header__top-right .botton__link:hover {
+        .header .header__top .cart .check__button:hover {
           background-color: #f4936f; }
   .header .header__middle {
-    padding: 10px 0;
-    border-bottom: 1px solid #d0e7e6; }
-    .header .header__middle .header__logo {
+    border-bottom: 1px solid #d0e7e6;
+    max-height: 81px; }
+    .header .header__middle .logo {
       float: left;
-      position: relative;
-      padding: 11px 25px 11px 49px; }
-      .header .header__middle .header__logo:before {
-        position: absolute;
-        content: "";
-        display: table;
-        background-image: url("../img/logo_top.png");
-        background-repeat: no-repeat;
-        width: 38px;
-        height: 37px;
-        top: 15px;
-        left: 0; }
-      .header .header__middle .header__logo .logo__link {
-        font-family: 'Cabin', sans-serif;
+      margin-top: 18px; }
+      .header .header__middle .logo .logo__link,
+      .header .header__middle .logo .logo__title {
+        float: left; }
+      .header .header__middle .logo .logo__title {
+        font-family: 'Cabin';
         font-size: 28px;
         color: #ff642b; }
-        .header .header__middle .header__logo .logo__link .logo__color {
+        .header .header__middle .logo .logo__title .title__item {
           color: #3cc9b0;
           font-weight: 700; }
-      .header .header__middle .header__logo .logo__info {
+      .header .header__middle .logo .logo__info {
         font-family: 'PT Sans', sans-serif;
         font-size: 12px;
         color: #858c8b; }
-    .header .header__middle .header__advertising {
+    .header .header__middle .advertising {
       float: right;
       background-color: #555555;
-      padding: 10px 42px 10px 36px; }
-      .header .header__middle .header__advertising .advertising__item {
+      margin: 10px 0 10px 17px;
+      width: 700px;
+      height: 61px; }
+      .header .header__middle .advertising .advertising__block {
         display: inline-block;
         border-right: 1px solid #888888;
-        padding-right: 41px; }
-        .header .header__middle .header__advertising .advertising__item .advertising__icon {
-          position: relative; }
-          .header .header__middle .header__advertising .advertising__item .advertising__icon:after {
-            position: absolute;
-            content: "";
-            display: table;
-            background: url("../img/rocket-icon.png");
-            background-repeat: no-repeat;
-            width: 32px;
-            height: 30px;
-            top: 0;
-            right: -20px; }
-        .header .header__middle .header__advertising .advertising__item .advertising__top {
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 800;
-          font-style: italic;
-          font-size: 19px;
-          text-transform: uppercase;
-          color: #fff; }
-        .header .header__middle .header__advertising .advertising__item .advertising__bottom {
-          font-family: 'Open Sans', sans-serif;
-          font-size: 11px;
-          color: #ffc412; }
-        .header .header__middle .header__advertising .advertising__item .advertising__element {
-          text-transform: none; }
-        .header .header__middle .header__advertising .advertising__item .advertising__viagra {
-          font-weight: 700;
-          text-transform: uppercase;
-          padding: 5px 0; }
-        .header .header__middle .header__advertising .advertising__item .middle__icon {
-          position: relative; }
-          .header .header__middle .header__advertising .advertising__item .middle__icon:after {
-            position: absolute;
-            content: "";
-            display: table;
-            background: url("../img/viagra__icon.png");
-            background-repeat: no-repeat;
-            width: 40px;
-            height: 39px;
-            top: 0;
-            right: -25px; }
-      .header .header__middle .header__advertising .middle__item {
-        padding-left: 31px; }
-      .header .header__middle .header__advertising .right__item {
+        padding: 7px 38px 0 36px;
+        line-height: 16px; }
+      .header .header__middle .advertising .pills {
+        padding: 0 58px 0 28px; }
+      .header .header__middle .advertising .prices {
         border-right: none;
-        padding-right: 0;
-        padding-left: 32px; }
-        .header .header__middle .header__advertising .right__item .right__side,
-        .header .header__middle .header__advertising .right__item .right__bottom {
-          display: inline-block; }
-        .header .header__middle .header__advertising .right__item .right__side {
-          text-transform: none;
-          color: #ffc412; }
-        .header .header__middle .header__advertising .right__item .right__icon {
-          padding-bottom: 1px; }
-          .header .header__middle .header__advertising .right__item .right__icon .right__element {
-            font-size: 13px; }
-        .header .header__middle .header__advertising .right__item .right__bottom {
-          font-size: 11px;
-          font-weight: 700;
-          text-transform: uppercase;
-          line-height: 1.67; }
-  .header .header__benefits {
-    padding: 17px 0; }
-    .header .header__benefits .benefits__list .benefits_element {
+        padding: 0 0 0 32px; }
+      .header .header__middle .advertising .rocket__icon {
+        position: relative; }
+        .header .header__middle .advertising .rocket__icon:after {
+          position: absolute;
+          content: "";
+          display: table;
+          background: url("../img/rocket-icon.png");
+          background-repeat: no-repeat;
+          width: 32px;
+          height: 30px;
+          top: -4px;
+          right: -17px; }
+      .header .header__middle .advertising .promotion__title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 19px;
+        text-transform: uppercase;
+        color: #fff; }
+      .header .header__middle .advertising .promotion__information {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        color: #ffc412; }
+      .header .header__middle .advertising .title__element {
+        text-transform: none; }
+      .header .header__middle .advertising .pills__type {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        color: #ffc412;
+        font-weight: 700;
+        text-transform: uppercase; }
+      .header .header__middle .advertising .pills__icon {
+        position: relative; }
+        .header .header__middle .advertising .pills__icon:after {
+          position: absolute;
+          content: "";
+          display: table;
+          background: url("../img/viagra__icon.png");
+          background-repeat: no-repeat;
+          width: 40px;
+          height: 39px;
+          top: 0;
+          right: -25px; }
+      .header .header__middle .advertising .discount__percent,
+      .header .header__middle .advertising .discount__information {
+        display: inline-block;
+        color: #ffc412;
+        font-family: 'Open Sans'; }
+      .header .header__middle .advertising .discount__percent {
+        font-size: 28px;
+        font-weight: 800;
+        position: relative;
+        padding-left: 15px;
+        font-style: italic; }
+        .header .header__middle .advertising .discount__percent .number {
+          position: absolute;
+          font-size: 13px;
+          font-weight: 300;
+          left: -4px;
+          top: 0; }
+      .header .header__middle .advertising .discount__information {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 13px; }
+  .header .benefits {
+    padding: 9px 0; }
+    .header .benefits .benefits__list .list__element {
       position: relative;
       display: inline-block;
       padding-left: 30px;
-      margin-left: 28px;
+      margin-left: 20px;
       font-family: 'Open Sans', sans-serif;
       font-size: 15px;
       font-weight: 700;
       font-style: italic;
       color: #555959; }
-      .header .header__benefits .benefits__list .benefits_element:first-child {
+      .header .benefits .benefits__list .list__element:first-child {
         margin-left: 0; }
-      .header .header__benefits .benefits__list .benefits_element:before {
+      .header .benefits .benefits__list .list__element:before {
         position: absolute;
         content: "";
         display: table;
@@ -259,49 +276,49 @@ ul li {
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%); }
-    .header .header__benefits .benefits__list .sprite__supplier:before {
+    .header .benefits .benefits__list .sprite__supplier:before {
       background-position: -24px 0;
       left: 0;
       width: 19px; }
-    .header .header__benefits .benefits__list .sprite__guarantee:before {
+    .header .benefits .benefits__list .sprite__guarantee:before {
       background-position: -43px 0;
       left: 0;
       width: 18px; }
-    .header .header__benefits .benefits__list .sprite__quality:before {
+    .header .benefits .benefits__list .sprite__quality:before {
       background-position: -61px 0;
       left: 0;
       width: 25px; }
-  .header .header__menu {
+  .header .menu {
     background-color: #3cc9b0; }
-    .header .header__menu .nav .nav__list {
+    .header .menu .nav .nav__list {
       float: left;
       width: 78%; }
-      .header .header__menu .nav .nav__list .nav__element {
+      .header .menu .nav .nav__list .nav__element {
         display: inline-block;
         vertical-align: middle; }
-        .header .header__menu .nav .nav__list .nav__element .nav__link {
+        .header .menu .nav .nav__list .nav__element .nav__link {
           font-family: 'Open Sans', sans-serif;
           font-size: 14px;
           font-weight: 700;
           color: #fff;
-          padding: 14px 18px;
+          padding: 16px 18px;
           -webkit-transition: all .3s;
           transition: all .3s; }
-          .header .header__menu .nav .nav__list .nav__element .nav__link:hover {
+          .header .menu .nav .nav__list .nav__element .nav__link:hover {
             color: #ffc412; }
-    .header .header__menu .nav .phone__number {
+    .header .menu .nav .phone__number {
       float: right;
       width: 22%; }
-      .header .header__menu .nav .phone__number .nav__paragraf {
+      .header .menu .nav .phone__number .nav__paragraf {
         position: relative;
         font-family: 'Open Sans', sans-serif;
         font-size: 10px;
         font-weight: 700;
         color: #fff;
         padding: 5px 20px 5px 40px; }
-        .header .header__menu .nav .phone__number .nav__paragraf .nav__number {
+        .header .menu .nav .phone__number .nav__paragraf .nav__number {
           font-size: 20px; }
-        .header .header__menu .nav .phone__number .nav__paragraf:before {
+        .header .menu .nav .phone__number .nav__paragraf:before {
           position: absolute;
           content: "";
           display: table;
@@ -314,7 +331,7 @@ ul li {
               -ms-transform: translateY(-50%);
                   transform: translateY(-50%);
           left: 10px; }
-    .header .header__menu .nav .nav__border {
+    .header .menu .nav .nav__border {
       border-right: 1px solid #7ad6c5; }
 
 .main .sidebar {

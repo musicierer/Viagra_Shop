@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -9,99 +10,142 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
 	<header class="header">
 		<div class="container">
-			
+
 			<div class="header__top clearfix">
-				<div class="header__top-left">
-					<p class="top__content">We deliver to your city
-					<a class="top__link special__color map__icon" href="#">London</a></p>
-					<p class="top__content"> ,We ship worldwide!</p>
+				<div class="location">
+					<p class="location__info">We deliver to your city
+						<a class="map__link" href="#">London</a></p>
+					<p class="location__info"> ,We ship worldwide!</p>
 				</div>
-				<div class="header__top-middle">
-					<a class="top__link middle__link" href="#">Currency: EUR</a>
-					<a class="top__link middle__link" href="#">Language: EN</a>
+				<div class="switcher">
+					<a class="switcher__price" href="#">Currency: EUR</a>
+					<a class="switcher__lang" href="#">Language: EN</a>
 				</div>
-				<div class="header__top-right">
-					<p class="top__content cart__icon">Your cart: <a class="top__link special__color" href="#">EUR 66.98</a> <span class="cart__item">(1 items)</span></p>
-					<a class="top__link botton__link" href="#">Checkout</a>
+				<div class="cart">
+					<p class="cart__inside">Your cart: <a class="payment" href="#">EUR 66.98</a> <span class="cart__item">(1 items)</span></p>
+					<a class="check__button" href="#">Checkout</a>
 				</div>
 			</div>
 
 			<div class="header__middle clearfix">
-				<div class="header__logo">
-					<a class="logo__link" href="#">Online <span class="logo__color">Pharmacy</span></a>
+				<div class="logo clearfix">
+					<a class="logo__link" href="#">
+						<img class="logo__image" src="img/logo_top.png" alt="">
+					</a>
+					<p class="logo__title">Online <span class="title__item">Pharmacy</span></p>
 					<p class="logo__info">#1 online worldwide drugstore</p>
 				</div>
-				<div class="header__advertising">
-					<ul class="advertising__list">
-						<li class="advertising__item">
-							<a class="advertising__top advertising__icon" href="#">free</a>
-							<a class="advertising__top" href="#">shipping!</a>
-							<a class="advertising__bottom" href="#">on all orders above $200.00</a>
-						</li>
-						<li class="advertising__item middle__item">
-							<a class="advertising__top middle__icon" href="#">free <span class="advertising__element">Pills!</span></a>
-							<a class="advertising__bottom advertising__viagra" href="#">viagra pills</a>
-							<a class="advertising__bottom" href="#">for free with every order</a>
-						</li>
-						<li class="advertising__item right__item">
-							<a class="advertising__top right__icon" href="#">our drug prices</a>
-							<a class="advertising__top right__side" href="#"><sup class="right__element">are</sup>70%</a>
-							<a class="advertising__bottom right__bottom" href="#">Less than in your<br>local pharmacy</a>
-						</li>
-					</ul>
+				<div class="advertising">
+					<div class="advertising__block">
+						<a href="#" class="promotion rocket__icon">
+							<p class="promotion__title">
+								free
+							</p>
+							<p class="promotion__title">
+								shipping!
+							</p>
+							<p class="promotion__information">
+								on all orders above $200.00
+							</p>
+						</a>
+					</div>
+					<div class="advertising__block pills">
+						<a href="#" class="promotion pills__icon">
+							<p class="promotion__title">
+								free <span class="title__element">Pills!</span>
+							</p>
+							<p class="pills__type">
+								viagra pills
+							</p>
+							<p class="promotion__information">
+								for free with every order
+							</p>
+						</a>
+					</div>
+					<div class="advertising__block prices">
+						<a href="#" class="promotion">
+							<p class="promotion__title">
+								our drug prices
+							</p>
+							<p class="discount clearfix">
+								<p class="discount__percent">
+									<sup class="number">are</sup>70%
+								</p>
+								<p class="discount__information">
+									Less than in your<br>local pharmacy
+								</p>
+							</p>
+							
+						</a>
+					</div>
 				</div>
 			</div>
-				<div class="header__benefits">
-					<ul class="benefits__list">
-						<li class="benefits_element sprite__delivery">
-							Free Delivery Insurance
+			<div class="benefits">
+				<ul class="benefits__list">
+					<li class="list__element sprite__delivery">
+						Free Delivery Insurance
+					</li>
+					<li class="list__element sprite__supplier">
+						10 years WorldWide Supplier
+					</li>
+					<li class="list__element sprite__guarantee">
+						100% Satisfaction Guarantee
+					</li>
+					<li class="list__element sprite__quality">
+						High Quality Medications
+					</li>
+				</ul>
+			</div>
+			<div class="menu">
+				<nav class="nav clearfix">
+					<ul class="nav__list">
+						<li class="nav__element">
+							<a class="nav__link" href="#">
+								Main
+							</a>
 						</li>
-						<li class="benefits_element sprite__supplier">
-							10 years WorldWide Supplier 
+						<li class="nav__element">
+							<a class="nav__link" href="#">
+								About us
+							</a>
 						</li>
-						<li class="benefits_element sprite__guarantee">
-							 100% Satisfaction Guarantee  	
+						<li class="nav__element">
+							<a class="nav__link" href="#">
+								F.A.Q.
+							</a>
 						</li>
-						<li class="benefits_element sprite__quality">
-							High Quality Medications
+						<li class="nav__element">
+							<a class="nav__link" href="#">
+								Our policies
+							</a>
+						</li>
+						<li class="nav__element">
+							<a class="nav__link" href="#">
+								Track my order
+							</a>
+						</li>
+						<li class="nav__element">
+							<a class="nav__link" href="#">
+								Your cart
+							</a>
+						</li>
+						<li class="nav__element nav__border">
+							<a class="nav__link" href="#">
+								Contact us
+							</a>
 						</li>
 					</ul>
-				</div>
-				<div class="header__menu">
-					<nav class="nav clearfix">
-						<ul class="nav__list">
-							<li class="nav__element">
-								<a class="nav__link" href="#">Main</a>
-							</li>
-							<li class="nav__element">
-								<a class="nav__link" href="#">About us</a>
-							</li>
-							<li class="nav__element">
-								<a class="nav__link" href="#">F.A.Q.</a>
-							</li>
-							<li class="nav__element">
-								<a class="nav__link" href="#">Our policies</a>
-							</li>
-							<li class="nav__element">
-								<a class="nav__link" href="#">Track my order</a>
-							</li>
-							<li class="nav__element">
-								<a class="nav__link" href="#">Your cart</a>
-							</li>
-							<li class="nav__element nav__border">
-								<a class="nav__link" href="#">Contact us</a>
-							</li>
-						</ul>
-						<div class="phone__number">
-							<a href="tel:+38018665408080" class="nav__paragraf">toll free phone:<br><span class="nav__number">1-866-540-8080</span></a>
-						</div>
-					</nav>
-				</div>
+					<div class="phone__number">
+						<a href="tel:+38018665408080" class="nav__paragraf">toll free phone:<br><span class="nav__number">1-866-540-8080</span></a>
+					</div>
+				</nav>
 			</div>
+		</div>
 		</div>
 	</header>
 
@@ -114,7 +158,7 @@
 					</h3>
 					<form action="" class="search__form">
 						<input class="search__field" type="search" name="" value="" placeholder="Quick search">
-						<input class="search__item" type="submit" value="">		
+						<input class="search__item" type="submit" value="">
 					</form>
 				</div>
 				<div class="nav__block">
@@ -247,7 +291,8 @@
 							Q: What does Generic stand for?
 						</h3>
 						<p class="content__info">
-							<span class="info__element">A:</span> Generic means using a different name for the same ingredients. The contents of the pills are absolutely the same in our generic version and the branded analogue. 
+							<span class="info__element">A:</span> Generic means using a different name for the same ingredients. The contents
+							of the pills are absolutely the same in our generic version and the branded analogue.
 						</p>
 					</div>
 					<div class="content__block">
@@ -255,7 +300,7 @@
 							Q: What are areas you send orders<br> to?
 						</h3>
 						<p class="content__info">
-							<span class="info__element">A:</span> We ship orders to any address of the world. 
+							<span class="info__element">A:</span> We ship orders to any address of the world.
 						</p>
 					</div>
 					<div class="content__block">
@@ -263,7 +308,7 @@
 							Q: What is the delivery time?
 						</h3>
 						<p class="content__info">
-							<span class="info__element">A:</span> You can check it on checkout page before you place an order. 
+							<span class="info__element">A:</span> You can check it on checkout page before you place an order.
 						</p>
 					</div>
 					<a href="#" class="help__link">
@@ -418,7 +463,7 @@
 						</li>
 					</ul>
 				</div>
-				
+
 				<div class="main__goods">
 					<h3 class="goods__title">
 						Viagra
@@ -426,7 +471,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/1.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -473,7 +518,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/2.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -520,7 +565,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/3.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -567,7 +612,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/4.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -614,7 +659,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/5.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -661,7 +706,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/6.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -708,7 +753,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/7.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -755,7 +800,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/8.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -802,7 +847,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/9.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -849,7 +894,7 @@
 					<div class="goods__description clearfix">
 						<div class="left__side">
 							<img src="img/10.png" alt="" class="goods__image">
-						<a href="#" class="goods__info">
+							<a href="#" class="goods__info">
 							More info
 						</a>
 						</div>
@@ -895,7 +940,7 @@
 					<h3 class="pills__title">
 						<span class="title__element">ED Packs.</span> For her and him
 					</h3>
-					<img class="pills__img" src="img/pills_icon1.png" alt="">	
+					<img class="pills__img" src="img/pills_icon1.png" alt="">
 				</div>
 				<div class="pills">
 					<h3 class="pills__title">
@@ -910,9 +955,8 @@
 				<p class="certificates__item">
 					<a class="certificates__link" href="#">
 						Awards and Certificates
-					</a>
-						(Сlick to view the certificate verification)
-				</p>	
+					</a> (Сlick to view the certificate verification)
+				</p>
 			</div>
 			<div class="company__logo">
 				<ul class="logo__list">
@@ -984,7 +1028,7 @@
 						</a>
 					</li>
 				</ul>
-			</div>	
+			</div>
 		</div>
 	</main>
 	<footer class="footer">
@@ -1045,4 +1089,5 @@
 	</footer>
 
 </body>
+
 </html>
