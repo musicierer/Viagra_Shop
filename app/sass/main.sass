@@ -24,7 +24,8 @@ a
 ul,
 h2,
 h3,
-p 
+p,
+td 
 	margin: 0
 	padding: 0
 
@@ -43,7 +44,7 @@ ul li
 	min-height: 207px
 	border-bottom: 1px solid #d0e7e6
 	padding-top: 13px
-	margin-bottom: 20px
+	margin-bottom: 16px
 	.header__top
 		padding-bottom: 4px
 		border-bottom: 1px solid #d0e7e6
@@ -79,7 +80,7 @@ ul li
 					left: 2px
 		.switcher
 			float: left
-			width: 32%
+			width: 31%
 			text-align: center
 			.switcher__price,
 			.switcher__lang
@@ -102,13 +103,13 @@ ul li
 					border-top: 4px solid #858c8b
 					border-left: 4px solid transparent
 					border-right: 4px solid transparent
-		.cart
+		.total
 			float: right
-			width: 36%
-			.cart__inside,
+			width: 37%
+			.total__price,
 			.payment
 				display: inline-block
-			.cart__inside
+			.total__price
 				position: relative
 				padding-left: 25px
 				font-family: 'Open Sans', sans-serif
@@ -123,13 +124,13 @@ ul li
 					height: 14px
 					top: 0
 					left: 0
-			.payment
+			.price
 				font-size: 13px
 				font-weight: 700
 				color: #3cc9b0
 			.cart__item
 				color: #858c8b
-			.check__button
+			.btn
 				display: inline-block
 				vertical-align: middle
 				text-align: center
@@ -152,39 +153,35 @@ ul li
 		.logo
 			float: left
 			margin-top: 18px
-			.logo__link,
-			.logo__title
-				float: left
-			.logo__title
-				font-family: 'Cabin'
-				font-size: 28px
-				color: #ff642b
-				.title__item
-					color: #3cc9b0
-					font-weight: 700
+			.logo__link
+				position: relative
 			.logo__info
+				position: absolute
 				font-family: 'PT Sans', sans-serif
 				font-size: 12px
 				color: #858c8b
+				bottom: 0
+				left: 50px
 		.advertising
 			float: right
 			background-color: #555555
 			margin: 10px 0 10px 17px
 			width: 700px
 			height: 61px
+			padding-top: 7px
 			.advertising__block
 				display: inline-block
 				border-right: 1px solid #888888
-				padding: 7px 38px 0 36px
+				padding: 0 38px 0 36px
 				line-height: 16px
 			.pills
 				padding: 0 58px 0 28px
 			.prices
 				border-right: none
 				padding: 0 0 0 32px 
-			.rocket__icon
+			.promotion__rocket
 				position: relative
-				&:after
+				.rocket__icon
 					position: absolute
 					content: ""
 					display: table
@@ -213,9 +210,9 @@ ul li
 				color: #ffc412
 				font-weight: 700
 				text-transform: uppercase
-			.pills__icon
+			.promotion__pills
 				position: relative
-				&:after
+				.pills__icon
 					position: absolute
 					content: ""
 					display: table
@@ -289,24 +286,28 @@ ul li
 	.menu
 		background-color: #3cc9b0
 		.nav
+			height: 46px
 			.nav__list
 				float: left
 				width: 78%
 				.nav__element
 					display: inline-block
-					vertical-align: middle
 					.nav__link
+						height: 46px
+						display: table-cell
+						vertical-align: middle
 						font-family: 'Open Sans', sans-serif
 						font-size: 14px
 						font-weight: 700
 						color: #fff
-						padding: 16px 18px
+						padding: 0 18px
 						transition: all .3s
 						&:hover
 							color: #ffc412
 			.phone__number
 				float: right
 				width: 22%
+				border-left: 1px solid #7ad6c5
 				.nav__paragraf
 					position: relative
 					font-family: 'Open Sans', sans-serif
@@ -326,47 +327,84 @@ ul li
 						height: 23px
 						top: 50%
 						transform: translateY(-50%)
-						left: 10px
-			.nav__border
-				border-right: 1px solid #7ad6c5			
+						left: 10px		
 
 // header end
 
 // nav start
 
 .main
+	.search
+		margin-bottom: 10px
+	.search__input
+		display: inline-block
+		width: 21%
+	.pagination__block
+		width: 51%
+		margin: 0 10px
+	.search__title
+		font-family: "Open Sans"
+		font-size: 13px
+		font-weight: 700
+		color: #182422
+		margin-bottom: 8px
+	.coupone__button
+		width: 242px
+		height: 31px
+		font-family: "Open Sans"
+		font-size: 12px
+		color: #182422
+		text-align: center
+		font-weight: 700
+		background-color: #ffc412
+		transition: all .3s
+		padding-top: 9px
+		&:hover
+			background-color: #fee393
+	.search__form
+		position: relative
+		.search__field
+			width: 202px
+			padding: 6px 0 10px 10px
+			border: 1px solid #ffc412
+			outline: none
+			font-family: "Open Sans"
+			font-size: 12px
+		.search__item
+			position: absolute
+			width: 18px
+			height: 19px
+			border: none
+			background: url("../img/elipse_icon.png") no-repeat
+			top: 50%
+			transform: translateY(-50%)
+			right: 17px
+			cursor: pointer
+	.pagination
+		.pagination__element
+			display: inline-block
+			margin-right: 7px
+			&:last-child
+				margin: 0
+			.pagination__link
+				font-family: "Open Sans"
+				font-size: 12px
+				font-weight: 700
+				color: #ff6e39
+				text-decoration: underline
+				line-height: 30px
+				transition: all .3s
+				&:hover
+					color: #6acbf1
+				
 	.sidebar
 		float: left
-		width: 202px
-		margin: 0 17px 37px 0
+		width: 203px
+		margin: 0 15px 37px 0
 		.sidebar__search-block
 			max-width: 202px
 			height: auto
 			margin-bottom: 10px
-			.search__title
-				font-family: "Open Sans"
-				font-size: 13px
-				margin-bottom: 13px
-			.search__form
-				position: relative
-				.search__field
-					position: relative
-					width: 100%
-					padding: 10px 0 10px 10px
-					border: 1px solid #ffc412
-					outline: none
-					font-family: "Open Sans"
-					font-size: 12px
-				.search__item
-					position: absolute
-					width: 18px
-					height: 19px
-					border: none
-					background: url("../img/elipse_icon.png") no-repeat
-					top: 50%
-					transform: translateY(-50%)
-					right: 10px
-					cursor: pointer
 		.nav__block
 			border: 1px solid #edf1f2
 			padding: 5px
@@ -375,11 +413,11 @@ ul li
 				font-family: "Open Sans"
 				font-size: 13px
 				text-align: center
-				padding: 10px 64px
+				padding: 6px 60px
 				background-color: #edf1f2
-				margin-bottom: 20px	
+				margin-bottom: 18px	
 		.nav__list
-			margin-left: 17px
+			margin-left: 12px
 			.list__element
 				margin-bottom: 12px
 				.list__link
@@ -424,15 +462,15 @@ ul li
 				&:hover
 					color: #f1c513
 					background-color: #cfeeea
-	.sidebar__content
-		.content__block
-			.content__title
+	.questions
+		.questions__block
+			.questions__title
 				font-size: 12px
 				font-family: "Open Sans"
 				font-weight: 700
 				color: #56d0bb
 				margin-bottom: 10px
-			.content__info
+			.questions__info
 				font-size: 12px
 				font-family: "Open Sans"
 				color: #959b9a
@@ -463,194 +501,200 @@ ul li
 			&:hover
 				color: #f1c513
 
-	.main__contnet
+	.main__content
 		float: left
-		max-width: 743px
-		.search__name
-			display: inline-block
-			font-family: "Open Sans"
-			font-size: 13px
-			font-weight: 700
-			text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75)
-			margin-bottom: 22px
-		.main__pagination
-			margin-bottom: 20px
-			.pagination__list
-				display: inline-block
-				.list__element
-					display: inline-block
-					margin-right: 7px
-					&:last-child
-						margin: 0
-					.list__link
-						font-size: 12px
-  						font-family: "Open Sans"
-						font-weight: 700
-						color: #ff6e39
-						text-decoration: underline
-						transition: all .3s
-						&:hover
-							color: #6acbf1
-		.main__goods
-			display: inline-block
-			max-width: 244px
-			height: auto
-			border: 1px solid #edf1f2
-			.goods__title
-				font-size: 12px
-				font-family: "Open Sans"
-				color: #35403e
-				background-color: #edf1f2
-				padding: 7px 192px 7px 10px
-				margin-bottom: 5px
-			.goods__description
-				width: 100%
-				padding-bottom: 5px
-				border-bottom: 1px solid #f0f0f0
-				margin-bottom: 3px
-				.left__side
+		.product__list
+			width: 743px
+			overflow-x: hidden
+			.product__list-i
+				width: 758px
+				.product
+					width: 237px
+					height: 197px
 					float: left
-					width: 50%
-				.goods__image
-					margin-left: 30px
-					margin-bottom: 10px
-				.goods__info
+					margin-right: 15px
+					margin-bottom: 15px
+					border: 1px solid #edf1f2
+				.banner
 					position: relative
-					font-size: 11px
-					font-family: "Open Sans"
-					color: #5d6665
-					padding-left: 10px
-					text-align: center
-					transition: all .3s
-					&:hover
-						color: #f1c513
-					&:before
+					float: right
+					width: 237px
+					height: 409px
+					margin-right: 15px
+					margin-bottom: 15px
+					.btn
 						position: absolute
-						content: ""
-						width: 0
-						height: 0
-						border-top: 4px solid transparent
-						border-left: 4px solid #80d3c9
-						border-bottom: 4px solid transparent
-						left: 25px
-						top: 50%
-						transform: translateY(-50%)
-					&:hover:before
-						border-left: 4px solid #f1c513
-				.right__side
-					float: left
-					width: 50%
-					.market__prices
-						position: relative
-						font-family: "Arial"
-						font-size: 11px
-						text-transform: uppercase
+						font-size: 13px
+						font-family: "Open Sans"
 						font-weight: 700
+						line-height: 1.2
+						color: #fff
+						bottom: 13px
+						left: 5px
+						background-color: #000
+						width: 230px
+						height: 28px
+						border-radius: 2px
 						text-align: center
-						padding: 5px
-						border: 1px solid #edf1f2
-						margin-right: 5px
-						margin-bottom: 7px
+						padding-top: 5px
+						&:hover
+							background-color: transparent
+							border: 1px solid #000
 						&:before
 							position: absolute
 							content: ""
 							display: table
-							background: url("../img/arrow__icon.png") no-repeat
-							width: 8px
-							height: 16px
-							left: -9px
-							bottom: -15px
-					.special__offer
-						font-family: "Arial"
+							width: 18px
+							height: 14px
+							background-image: url("../img/banner__cart.png")
+							left: 60px
+				.product__title
+					font-size: 12px
+					font-family: "Open Sans"
+					color: #35403e
+					background-color: #edf1f2
+					padding: 7px 192px 7px 10px
+					margin-bottom: 5px
+				.product__description
+					width: 100%
+					padding-bottom: 5px
+					border-bottom: 1px solid #f0f0f0
+					margin-bottom: 3px
+					.product__image
+						float: left
+						position: relative
+						width: 82px
+						height: 80px
+						margin-left: 16px
+					.goods__image
+						display: block
+						max-width: 100%
+						max-height: 60px
+						top: 50%
+						left: 50%
+						position: absolute
+						transform: translate(-50%, -50%)
+					.goods__info
+						position: absolute
+						bottom: -17px
+						left: 10px
 						font-size: 11px
-						text-transform: uppercase
+						font-family: "Open Sans"
+						color: #5d6665
+						padding-left: 10px
 						text-align: center
-						font-weight: 700
-						padding: 2px 0
-						background-color: #ff642b
-						color: #fff
-						margin-bottom: 3px
-						margin-right: 5px
-					.prices__item
-						color: #ff642b
-						font-weight: 700
-						font-size: 20px
-						text-align: center
-						margin-right: 5px
-					.side__item
-						font-family: "Arial"
-						font-size: 11px
-						text-align: right
-						color: #35403e
-						margin-right: 5px
-			.company__list
-				.list__element
-					display: inline-block
-					margin: 0 11px 7px 0
-					&:first-child
-						margin-left: 35px
-			.select__button
-				position: relative
-				padding: 7px 72px
-				color: #fff
-				font-size: 13px
-				font-family: "Open Sans"
-				background-color: #ff642b
-				border-radius: 5px
-				margin: 0 5px 5px 5px
-				transition: all .3s
-				&:hover
-					background-color: #ce8b72
-	.main__banner
-		float: right
-		max-width: 242px
-		.coupone__title
-			font-family: "Open Sans"
-			font-size: 13px
-			color: #182422
-			font-weight: 700
-			text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75)
-			margin-bottom: 12px
-			.title__item
-				font-weight: 400
-		.coupone__button
-			font-family: "Open Sans"
-			font-size: 12px
-			color: #182422
-			font-weight: 700
-			padding: 12px 61px
-			background-color: #ffc412
-			transition: all .3s
-			margin-bottom: 10px
-			&:hover
-				background-color: #fee393
-	.main__medicine
-		.pills
+						transition: all .3s
+						&:hover
+							color: #f1c513
+						&:before
+							position: absolute
+							content: ""
+							width: 0
+							height: 0
+							border-top: 4px solid transparent
+							border-left: 4px solid #80d3c9
+							border-bottom: 4px solid transparent
+							left: 0
+							top: 50%
+							transform: translateY(-50%)
+						&:hover:before
+							border-left: 4px solid #f1c513
+					.prices
+						float: right
+						width: 50%
+						.market__prices
+							position: relative
+							font-family: "Arial"
+							font-size: 11px
+							text-transform: uppercase
+							font-weight: 700
+							text-align: center
+							padding: 5px
+							border: 1px solid #edf1f2
+							margin-right: 5px
+							margin-bottom: 7px
+							&:before
+								position: absolute
+								content: ""
+								display: table
+								background: url("../img/arrow__icon.png") no-repeat
+								width: 8px
+								height: 16px
+								left: -9px
+								bottom: -15px
+						.special__offer
+							font-family: "Arial"
+							font-size: 11px
+							text-transform: uppercase
+							text-align: center
+							font-weight: 700
+							padding: 2px 0
+							background-color: #ff642b
+							color: #fff
+							margin-bottom: 3px
+							margin-right: 5px
+						.prices__item
+							color: #ff642b
+							font-weight: 700
+							font-size: 20px
+							text-align: center
+							margin-right: 5px
+						.side__item
+							font-family: "Arial"
+							font-size: 11px
+							text-align: right
+							color: #35403e
+							margin-right: 5px
+				.delivery
+					.delivery__element
+						display: inline-block
+						margin: 0 11px 7px 0
+						&:first-child
+							margin-left: 35px
+				.select__button
+					position: relative
+					padding: 7px 72px
+					color: #fff
+					font-size: 13px
+					font-family: "Open Sans"
+					background-color: #ff642b
+					border-radius: 5px
+					margin: 0 5px 5px 5px
+					transition: all .3s
+					&:hover
+						background-color: #ce8b72
+	.pills__type
+		.pills__type-pack
 			position: relative
-			display: inline-block
-			min-width: 38%
-			min-height: 140px
+			width: 50%
+			height: 140px
 			margin-top: 10px
 			border: 1px solid #edf1f2
 			padding-bottom: 14px
-			.pills__title
-				font-size: 18px
-				font-family: "Open Sans"
-				font-weight: 700
-				text-align: center
-				color: #3cc9b0
-				margin-top: 14px
-				margin-bottom: 18px
-				.title__element
-					color: #ff7847
-			.pills__img
-				position: absolute
-				left: 50%
-				transform: translateX(-50%)
-.main__certificates
-	padding-bottom: 16px
-	margin-bottom: 24px
-	border-bottom: 1px solid #edf1f2
+		.pills-left
+			float: left
+		.pills-right
+			float: right
+		.pills__type-title
+			font-size: 18px
+			font-family: "Open Sans"
+			font-weight: 700
+			text-align: center
+			color: #3cc9b0
+			margin-top: 14px
+			margin-bottom: 18px
+			.title__element
+				color: #ff7847
+		.pills__type-img
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+
+.footer
+	.certificates
+		padding-bottom: 16px
+		margin-bottom: 24px
+		border-bottom: 1px solid #edf1f2
 	.certificates__item
 		font-size: 12px
 		font-family: "Open Sans"
@@ -661,52 +705,55 @@ ul li
 			font-size: 13px
 			font-weight: 700
 			color: #33414e
-.company__logo
+.certificates-type
 	padding-bottom: 26px
 	border-bottom: 1px solid #edf1f2
-	.logo__list
+	.certificates-type__list
 		.list__element
 			display: inline-block
 			margin-right: 27px
 			&:first-child
 				margin-left: 20px
-.main__payment
+.payment-type
 	height: 82px
 	border-bottom: 1px solid #edf1f2
 	padding: 19px 131px
 	margin-bottom: 19px
-	.payment__list
+	.payment-type__list
 		.list__element
 			display: inline-block
 			vertical-align: middle
 			margin-right: 45px
 			&:first-child
+				font-size: 13px
+				font-family: "Open Sans"
+				line-height: 1.2
 				margin-right: 32px
-.footer
-	.footer__left
-		float: left
-		margin-bottom: 19px
-		.footer__copyright
-			font-family: "Open Sans"
-			font-size: 12px
-			color: #182422
-			padding-left: 32px
-	.footer__right
-		float: right
-		.footer__list
-			margin-top: 10px
-			.list__element
-				display: inline-block
-				border-right: 1px solid #a6abaa
-				padding: 0 10px
-				&:last-child
-					border: none
-				&:first-child
-					padding-left: 0
-				.list__link
-					font-size: 12px
-					font-family: "Open Sans"
-					color: rgb(53, 64, 62)
-					transition: all .3s
-					&:hover
-						color: #f1c513
+.footer__logo
+	float: left
+	margin-bottom: 19px
+	.footer__logo-copyright
+		font-family: "Open Sans"
+		font-size: 12px
+		color: #182422
+		padding-left: 32px
+.footer__nav
+	float: right
+	.footer__nav-list
+		margin-top: 10px
+		.list__element
+			display: inline-block
+			border-right: 1px solid #a6abaa
+			padding: 0 10px
+			&:last-child
+				border: none
+			&:first-child
+				padding-left: 0
+			.list__link
+				font-size: 12px
+				font-family: "Open Sans"
+				color: rgb(53, 64, 62)
+				transition: all .3s
+				&:hover
+					color: #f1c513
+					
